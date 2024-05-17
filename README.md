@@ -2,21 +2,11 @@
 
 Este é um sistema de empréstimo de ferramentas para amigos, desenvolvido em Java e utilizando o MySQL (MariaDB) como banco de dados. O sistema permite cadastrar amigos, cadastrar ferramentas, realizar empréstimos, realizar a devolução das ferramentas emprestadas e oferece alguns relatórios e funcionalidades adicionais.
 
-
-[Baixar JetBrains IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=windows)
-
-É preciso alterar as seguintes configrações de banco de dados de acordo com seu ambiente:
-- serverName = "localhost";    Caminho do servidor do BD
-- mydatabase = "a3db";     Nome do seu banco de dados
-- username = "root";       Nome de um usuário de seu BD
-- password = "";      Sua senha de acesso
-- port = "3306"; Porta default do Banco de dados
-
 ## 🛠 Pré-requisitos
 
 Antes de executar o sistema, certifique-se de ter instalado os seguintes componentes:
-- IDE ou Maven para compilar e executar o código
-- [Java JDK](https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html)
+- IDE para Alterar Configurações do Banco de Dados: [Baixar JetBrains IntelliJ IDEA](https://www.jetbrains.com/idea/download/?section=windows), [Baixar Visual Studio Code](https://code.visualstudio.com/download)
+- [Java JDK 22](https://www.oracle.com/java/technologies/javase/jdk22-archive-downloads.html)
 - [MySQL Workbench ou Gerenciador de Banco de Dados de sua Preferência](https://dev.mysql.com/downloads/workbench/)
 - [MariaDB Server ou MySQL Server](https://mariadb.org/download/?t=mariadb&p=mariadb&r=11.3.2&os=windows&cpu=x86_64&pkg=msi&mirror=fder)
 - [Git](https://git-scm.com/downloads)
@@ -24,6 +14,12 @@ Antes de executar o sistema, certifique-se de ter instalado os seguintes compone
 
 ## Configuração do Banco de Dados e 🚀 Executando o Projeto
 
+É preciso alterar as seguintes configrações de banco de dados de acordo com seu ambiente:
+- serverName = "localhost";    Caminho do servidor do BD
+- mydatabase = "a3db";     Nome do seu banco de dados
+- username = "root";       Nome de um usuário de seu BD
+- password = "";      Sua senha de acesso
+- port = "3306"; Porta default do Banco de dados
 
 1. Clone o projeto para o seu ambiente local, escolha alguma pasta em seu computador e abra o terminal, e de o seguinte comando:
 - git clone https://github.com/jvlerner/GerenciamentoEmprestimosCRUD.git
