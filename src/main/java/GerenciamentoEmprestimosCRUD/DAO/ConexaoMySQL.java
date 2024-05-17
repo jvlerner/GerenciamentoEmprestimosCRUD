@@ -6,14 +6,13 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 //Início da classe de conexão//
-
 public class ConexaoMySQL {
     public static String status = "Não conectou...";
     //Método Construtor da Classe//
     public ConexaoMySQL() {}
     //Método de Conexão//
     public static Connection getConexaoMySQL() {
-        Connection connection = null;          //atributo do tipo Connection
+        Connection connection;          //atributo do tipo Connection
         try {
             // Carregando o JDBC Driver padrão
             String driverName = "com.mysql.cj.jdbc.Driver";
@@ -35,19 +34,16 @@ public class ConexaoMySQL {
             return connection;
 
         } catch (ClassNotFoundException e) {  //Driver não encontrado
-            System.out.println(connection);
             System.out.println("O driver expecificado nao foi encontrado.");
             return null;
 
         } catch (SQLException e) {
             //Não conseguindo se conectar ao banco
-            System.out.println(connection);
             System.out.println("Nao foi possivel conectar ao Banco de Dados.");
             return null;
 
         } catch (Exception e) {
             //Testa sua conexão//
-            System.out.println(connection);
             System.out.println("Erro ao conectar ao Banco de Dados: " + e.getMessage());
             return null;
         }
