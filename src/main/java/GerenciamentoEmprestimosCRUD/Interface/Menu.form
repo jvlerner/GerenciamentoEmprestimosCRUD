@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GerenciamentoEmprestimosCRUD.Interface.Menu">
+  <grid id="27dc6" binding="mainPanel" layout-manager="BorderLayout" hgap="1" vgap="1">
+    <constraints>
+      <xy x="11" y="10" width="989" height="639"/>
+    </constraints>
+    <properties>
+      <autoscrolls value="true"/>
+      <background color="-13290187"/>
+      <font/>
+      <foreground color="-1"/>
+      <maximumSize width="900" height="680"/>
+      <minimumSize width="800" height="400"/>
+      <opaque value="false"/>
+    </properties>
+    <border type="empty">
+      <font/>
+      <title-color color="-197380"/>
+      <size top="0" left="0" bottom="0" right="0"/>
+    </border>
+    <children>
+      <grid id="32f8f" binding="panel0" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="true" same-size-vertically="true" hgap="-1" vgap="15">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints border-constraint="Center"/>
+        <properties>
+          <background color="-13290187"/>
+          <enabled value="true"/>
+          <foreground color="-13947600"/>
+          <inheritsPopupMenu value="false"/>
+          <maximumSize width="900" height="680"/>
+          <minimumSize width="800" height="400"/>
+          <preferredSize width="-1" height="-1"/>
+        </properties>
+        <border type="empty">
+          <size top="15" left="15" bottom="15" right="15"/>
+        </border>
+        <children>
+          <grid id="78774" binding="panel1" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="400" height="200"/>
+                <maximum-size width="900" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-14803426"/>
+              <enabled value="true"/>
+              <font size="20"/>
+              <foreground color="-2104859"/>
+              <toolTipText value=""/>
+            </properties>
+            <border type="line" title="Registrar Empréstimo" title-justification="2" title-position="3">
+              <font name="Segoe UI" size="18" style="1"/>
+              <title-color color="-2763307"/>
+              <size top="5" left="5" bottom="5" right="5"/>
+              <color color="-14277082"/>
+            </border>
+            <children>
+              <component id="f5808" class="javax.swing.JLabel" binding="labelFerramenta1">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Segoe UI" size="12"/>
+                  <foreground color="-2763307"/>
+                  <horizontalAlignment value="4"/>
+                  <labelFor value="489e0"/>
+                  <text value="Ferramenta:"/>
+                </properties>
+              </component>
+              <component id="489e0" class="javax.swing.JComboBox" binding="comboFerramenta1">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-2763307"/>
+                  <font name="Segoe UI" size="12"/>
+                  <foreground color="-14803426"/>
+                  <model/>
+                </properties>
+              </component>
+              <component id="f3fe8" class="javax.swing.JComboBox" binding="comboPessoa1">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-2763307"/>
+                  <font name="Segoe UI" size="12"/>
+                  <foreground color="-14803426"/>
+                  <model/>
+                  <toolTipText value=""/>
+                </properties>
+              </component>
+              <component id="35659" class="javax.swing.JButton" binding="buttonRegistrar1">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <actionCommand value=""/>
+                  <background color="-14408148"/>
+                  <font name="Segoe UI" size="14"/>
+                  <foreground color="-2763307"/>
+                  <horizontalTextPosition value="0"/>
+                  <text value="&amp;Registrar Empréstimo"/>
+                </properties>
+              </component>
+              <component id="afced" class="javax.swing.JLabel" binding="labelPessoa1">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-16777216"/>
+                  <font name="Segoe UI" size="12"/>
+                  <foreground color="-2763307"/>
+                  <horizontalAlignment value="4"/>
+                  <labelFor value="f3fe8"/>
+                  <text value="Pessoa:"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="3952" binding="panel2" layout-manager="GridLayoutManager" row-count="3" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="10" left="10" bottom="10" right="10"/>
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <minimum-size width="400" height="200"/>
+                <maximum-size width="900" height="400"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-14803426"/>
+              <enabled value="true"/>
+              <foreground color="-2104859"/>
+            </properties>
+            <border type="line" title="Registrar Devolução" title-justification="2" title-position="3">
+              <font name="Segoe UI" size="18" style="1"/>
+              <title-color color="-2763307"/>
+              <color color="-14277082"/>
+            </border>
+            <children>
+              <component id="50b39" class="javax.swing.JLabel" binding="labelFerramenta2">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Segoe UI" size="12"/>
+                  <foreground color="-2763307"/>
+                  <horizontalAlignment value="4"/>
+                  <text value="Ferramenta:"/>
+                </properties>
+              </component>
+              <component id="5d2fc" class="javax.swing.JComboBox" binding="comboPessoa2">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-2763307"/>
+                  <font name="Segoe UI" size="12"/>
+                  <foreground color="-14803426"/>
+                  <model/>
+                </properties>
+              </component>
+              <component id="d2f83" class="javax.swing.JComboBox" binding="comboFerramenta2">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-2763307"/>
+                  <font name="Segoe UI" size="12"/>
+                  <foreground color="-14803426"/>
+                  <model/>
+                </properties>
+              </component>
+              <component id="a77b9" class="javax.swing.JLabel" binding="labelPessoa2">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-1"/>
+                  <font name="Segoe UI" size="12"/>
+                  <foreground color="-2763307"/>
+                  <horizontalAlignment value="4"/>
+                  <text value="Pessoa:"/>
+                  <verticalAlignment value="0"/>
+                </properties>
+              </component>
+              <component id="4fc77" class="javax.swing.JButton" binding="buttonRegistrar2">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-14408148"/>
+                  <font name="Segoe UI" size="14"/>
+                  <foreground color="-2763307"/>
+                  <text value="Registrar Devolução"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <inspectionSuppressions>
+    <suppress inspection="I18nForm"/>
+    <suppress inspection="FormSpellChecking" id="27dc6"/>
+    <suppress inspection="FormSpellChecking" id="78774"/>
+    <suppress inspection="FormSpellChecking" id="3952"/>
+    <suppress inspection="FormSpellChecking" id="f5808"/>
+    <suppress inspection="FormSpellChecking" id="50b39"/>
+    <suppress inspection="NoLabelFor" id="5d2fc"/>
+    <suppress inspection="NoLabelFor" id="d2f83"/>
+    <suppress inspection="MissingMnemonic" id="4fc77"/>
+    <suppress inspection="FormSpellChecking" id="4fc77"/>
+  </inspectionSuppressions>
+</form>
