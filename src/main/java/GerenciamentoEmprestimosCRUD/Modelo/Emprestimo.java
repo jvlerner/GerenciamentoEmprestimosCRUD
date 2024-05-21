@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class Emprestimo {
     // Atributos da classe Emprestimo
-    private int id; // Identificador do empréstimo
-    private int pessoaId; // Identificador da pessoa que fez o empréstimo
-    private int ferramentaId; // Identificador da ferramenta emprestada
-    private Date dataOut; // Data de início do empréstimo
-    private Date dataIn; // Data de devolução do empréstimo
+    private int id; // iniciliza a variável Identificador do empréstimo
+    private int pessoaId; // inicializa a variável Identificador da pessoa que fez o empréstimo
+    private int ferramentaId; // inicializa a variável Identificador da ferramenta emprestada
+    private Date dataOut; // inicializa a variável Data de início do empréstimo
+    private Date dataIn; // inicializa a variável  Data de devolução do empréstimo
 
     // Construtor padrão sem argumentos
     public Emprestimo() {
@@ -18,11 +18,11 @@ public class Emprestimo {
 
     // Construtor parametrizado
     public Emprestimo(int id, int pessoaId, int ferramentaId, Date dataOut, Date dataIn) {
-        this.id = id; // Inicializa o atributo id
-        this.pessoaId = pessoaId; // Inicializa o atributo pessoaId
-        this.ferramentaId = ferramentaId; // Inicializa o atributo ferramentaId
-        this.dataOut = dataOut; // Inicializa o atributo dataOut
-        this.dataIn = dataIn; // Inicializa o atributo dataIn
+        this.id = id; // atribui  valor ao id
+        this.pessoaId = pessoaId; // atribui  valor a pessoaId
+        this.ferramentaId = ferramentaId; // atribui  valor a ferramentaId
+        this.dataOut = dataOut; // atribui valor a dataOut
+        this.dataIn = dataIn; // atribui valor a dataIn
     }
 
     // Métodos getter e setter para o atributo id
