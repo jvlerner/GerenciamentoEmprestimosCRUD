@@ -20,15 +20,15 @@ public class CadastrarPessoa extends JFrame {
     private JLabel labelNome;
     private JButton buttonCancelar;
 
-    public CadastrarPessoa() {
-        setContentPane(contentPane);
-        setLocationRelativeTo(null);
-        setSize(500, 250);
-        setResizable(false);
-        setTitle("Cadastrar Pessoa");
+    public CadastrarPessoa() { //cria uma janela para cadastrar pessoas
+        setContentPane(contentPane); //contém os elementos visuais da janela
+        setLocationRelativeTo(null); //centraliza a janela quando exibida
+        setSize(500, 250); //define o tamanho da janela
+        setResizable(false); //impede a redefinição do tamanho da tela pelo usuário
+        setTitle("Cadastrar Pessoa"); //define o título da janela
 
-        buttonCancelar.addActionListener(
-                new ActionListener() {
+        buttonCancelar.addActionListener( //quando clicado, executa o método "ActionListener"
+                new ActionListener() { //cria um novo objeto da classe ActionListener
                     public void actionPerformed(ActionEvent e) {
                         dispose();
                     }
