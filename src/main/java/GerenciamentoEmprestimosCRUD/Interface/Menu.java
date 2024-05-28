@@ -1,5 +1,5 @@
 package GerenciamentoEmprestimosCRUD.Interface;
-
+//Importando requisitos//
 import GerenciamentoEmprestimosCRUD.DAO.DAOEmprestimo;
 import GerenciamentoEmprestimosCRUD.DAO.DAOFerramenta;
 import GerenciamentoEmprestimosCRUD.DAO.DAOPessoa;
@@ -14,8 +14,9 @@ import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
-
+//Cria tela principal do aplicativo 
 public class Menu extends JFrame {
+    //Cria coponentes da tela 
     private JPanel mainPanel;
     private JPanel panel1;
     private JPanel panel2;
@@ -30,10 +31,10 @@ public class Menu extends JFrame {
     private JLabel labelFerramenta2;
     private JLabel labelPessoa2;
     private JPanel panel0;
-
+//Cores do menu
     static Color menuTextWhite = new Color(213, 213, 213);
     static Color menuTextBlack = new Color(35, 35, 35);
-
+//Inicializa tela menu
     public Menu() throws SQLException {
         //CRIA O FRAME E INICIA SETA OS COMPONENTES
         JFrame frame = new JFrame("Sistema de Gerenciamento de Empréstimos");
