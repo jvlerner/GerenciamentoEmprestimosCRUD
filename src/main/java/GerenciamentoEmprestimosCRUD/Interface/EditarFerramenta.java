@@ -3,11 +3,15 @@ package GerenciamentoEmprestimosCRUD.Interface;
 import GerenciamentoEmprestimosCRUD.DAO.DAOFerramenta;
 import GerenciamentoEmprestimosCRUD.Modelo.Ferramenta;
 import javax.swing.*;
+import javax.swing.plaf.FontUIResource;
+import javax.swing.text.StyleContext;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.sql.SQLException;
+import java.util.Locale;
 import java.util.Objects;
 
 public class EditarFerramenta extends JFrame {
@@ -108,4 +112,5 @@ public class EditarFerramenta extends JFrame {
         txtPreco.setText(String.valueOf(ferramenta.getPreco()));
         emprestadoCheckBox.setSelected(ferramenta.isEmprestado());
     }
+
 }

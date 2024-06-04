@@ -187,4 +187,5 @@ public class RelatorioEmprestimos extends JFrame {
             tableRelatorio.getColumnModel().getColumn(0).setPreferredWidth(1);
         }
     }
+
 }

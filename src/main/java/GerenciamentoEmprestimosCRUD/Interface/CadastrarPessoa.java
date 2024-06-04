@@ -3,9 +3,14 @@ package GerenciamentoEmprestimosCRUD.Interface;
 import GerenciamentoEmprestimosCRUD.DAO.DAOPessoa;
 import GerenciamentoEmprestimosCRUD.Modelo.Pessoa;
 import javax.swing.*;
+import javax.swing.border.TitledBorder;
+import javax.swing.plaf.FontUIResource;
+import javax.swing.text.StyleContext;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
+import java.util.Locale;
 import java.util.Objects;
 
 public class CadastrarPessoa extends JFrame {
@@ -72,4 +77,5 @@ public class CadastrarPessoa extends JFrame {
             }
         });
     }
+
 }

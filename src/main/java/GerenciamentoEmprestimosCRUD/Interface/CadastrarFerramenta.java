@@ -3,9 +3,14 @@ package GerenciamentoEmprestimosCRUD.Interface;
 import GerenciamentoEmprestimosCRUD.DAO.DAOFerramenta;
 import GerenciamentoEmprestimosCRUD.Modelo.Ferramenta;
 import javax.swing.*;
+import javax.swing.border.TitledBorder;
+import javax.swing.plaf.FontUIResource;
+import javax.swing.text.StyleContext;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
+import java.util.Locale;
 import java.util.Objects;
 
 public class CadastrarFerramenta extends JFrame {
@@ -27,7 +32,7 @@ public class CadastrarFerramenta extends JFrame {
         setSize(500, 260); //define o tamanho da janela
         setResizable(false); //impede a redefinição do tamanho da tela pelo usuário
         setTitle("Cadastrar Ferramenta"); //define o título da janela
-      
+
         buttonCancelar.addActionListener( //quando clicado, executa o método "ActionListener"
                 new ActionListener() { //cria um novo objeto da classe ActionListener
                     public void actionPerformed(ActionEvent e) {
@@ -46,7 +51,7 @@ public class CadastrarFerramenta extends JFrame {
                     JOptionPane.showMessageDialog(null, "Insira um nome para a ferramenta!", "Erro", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
-              
+
                 if (marca.isEmpty()) { //define uma mensagem de erro no momento de cadastro das ferramentas
                     JOptionPane.showMessageDialog(null, "Insira uma marca!", "Erro", JOptionPane.ERROR_MESSAGE);
                     return;
@@ -69,7 +74,8 @@ public class CadastrarFerramenta extends JFrame {
                     txtCusto.setText(""); //altera o valor da ferramenta
                 } catch (SQLException ex) { //cria uma exceção SQL
                     JOptionPane.showMessageDialog(null, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE); //define uma mensagem de erro para a exceção SQL
-                } catch (NumberFormatException ex) { //captura uma exceção NumberFormat e resolve dentro desse bloco de código
+                } catch (
+                        NumberFormatException ex) { //captura uma exceção NumberFormat e resolve dentro desse bloco de código
                     if (Objects.equals(ex.getMessage(), "empty String")) {
                         JOptionPane.showMessageDialog(null, "Insira um preço. Ex: '199.90' ou '199,90'", "Preço não foi inserido", JOptionPane.ERROR_MESSAGE); //define uma mensagem de erro/solução para a exceção
                     } else {
@@ -80,4 +86,5 @@ public class CadastrarFerramenta extends JFrame {
             }
         });
     }
+
 }
