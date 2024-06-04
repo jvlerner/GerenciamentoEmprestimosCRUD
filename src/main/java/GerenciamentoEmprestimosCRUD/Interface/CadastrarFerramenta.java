@@ -27,7 +27,7 @@ public class CadastrarFerramenta extends JFrame {
         setSize(500, 260); //define o tamanho da janela
         setResizable(false); //impede a redefinição do tamanho da tela pelo usuário
         setTitle("Cadastrar Ferramenta"); //define o título da janela
-
+      
         buttonCancelar.addActionListener( //quando clicado, executa o método "ActionListener"
                 new ActionListener() { //cria um novo objeto da classe ActionListener
                     public void actionPerformed(ActionEvent e) {
@@ -42,12 +42,11 @@ public class CadastrarFerramenta extends JFrame {
                 double preco;
                 String nome = txtNomeFerramenta.getText();
                 String marca = txtMarca.getText();
-
                 if (nome.isEmpty()) { //define uma mensagem de erro no momento de cadastro das ferramentas
                     JOptionPane.showMessageDialog(null, "Insira um nome para a ferramenta!", "Erro", JOptionPane.ERROR_MESSAGE);
                     return;
                 }
-
+              
                 if (marca.isEmpty()) { //define uma mensagem de erro no momento de cadastro das ferramentas
                     JOptionPane.showMessageDialog(null, "Insira uma marca!", "Erro", JOptionPane.ERROR_MESSAGE);
                     return;
