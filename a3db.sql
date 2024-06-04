@@ -4,7 +4,7 @@ CREATE DATABASE IF NOT EXISTS `a3db` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8m
 USE `a3db`;
 
 -- Criando a estrutura para tabela `emprestimo`
-DROP TABLE IF EXISTS `emprestimo`; -- Dropa e recria caso já exista (descomentar caso deseja utilizar)
+DROP TABLE IF EXISTS `emprestimo`; -- Dropa e recria caso já exista
 CREATE TABLE IF NOT EXISTS `emprestimo` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
   `pessoaId` int(255) NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE IF NOT EXISTS `emprestimo` (
 ) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Criando a estrutura para tabela `ferramenta`
-DROP TABLE IF EXISTS `ferramenta`; -- Dropa e recria caso já exista (descomentar caso deseja utilizar)
+DROP TABLE IF EXISTS `ferramenta`; -- Dropa e recria caso já exista
 CREATE TABLE IF NOT EXISTS `ferramenta` (
   `id` int(255) NOT NULL AUTO_INCREMENT,
   `ferramenta` varchar(255) NOT NULL,
@@ -40,7 +40,7 @@ INSERT INTO `ferramenta` (`id`, `ferramenta`, `marca`, `preco`, `emprestado`) VA
 
 
 -- Criando a estrutura para tabela `pessoa`
-DROP TABLE IF EXISTS `pessoa`; -- Dropa e recria caso já exista (descomentar caso deseja utilizar)
+DROP TABLE IF EXISTS `pessoa`; -- Dropa e recria caso já exista
 CREATE TABLE IF NOT EXISTS `pessoa` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `nome` varchar(255) NOT NULL,
