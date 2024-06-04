@@ -11,7 +11,7 @@
       <foreground color="-1"/>
       <maximumSize width="900" height="680"/>
       <minimumSize width="800" height="400"/>
-      <opaque value="false"/>
+      <opaque value="true"/>
     </properties>
     <border type="empty">
       <font/>
