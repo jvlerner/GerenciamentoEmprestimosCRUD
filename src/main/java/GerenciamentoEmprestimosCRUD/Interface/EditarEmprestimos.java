@@ -170,7 +170,7 @@ public class EditarEmprestimos extends JFrame {
         Emprestimo emprestimo = new Emprestimo();
         emprestimo.setId(id);
         emprestimo.setPessoaId(idPessoa);
-        emprestimo.setFerrentaId(ferramentaId);
+        emprestimo.setFerramentaId(ferramentaId);
         emprestimo.setDataOut(java.sql.Date.valueOf(dateOut));
         emprestimo.setDataIn(dateIn);
         if (DAOEmprestimo.update(emprestimo)) {
@@ -180,7 +180,7 @@ public class EditarEmprestimos extends JFrame {
 
     private void data(Emprestimo emp) throws SQLException {
         int idPessoa = emp.getPessoaId();
-        int idFerramenta = emp.getFerrentaId();
+        int idFerramenta = emp.getFerramentaId();
         comboPessoa.removeAllItems();
         ArrayList<Pessoa> listaPessoas = DAOPessoa.index();
         Pessoa selectedPessoa = DAOPessoa.show(idPessoa);
