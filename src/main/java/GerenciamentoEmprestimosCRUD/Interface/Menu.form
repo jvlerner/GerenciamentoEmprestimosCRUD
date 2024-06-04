@@ -11,15 +11,15 @@
       <foreground color="-1"/>
       <maximumSize width="900" height="680"/>
       <minimumSize width="800" height="400"/>
-      <opaque value="false"/>
+      <opaque value="true"/>
     </properties>
     <border type="empty">
       <font/>
       <title-color color="-197380"/>
-      <size top="0" left="0" bottom="0" right="0"/>
+      <size top="20" left="20" bottom="20" right="20"/>
     </border>
     <children>
-      <grid id="32f8f" binding="panel0" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="true" same-size-vertically="true" hgap="-1" vgap="15">
+      <grid id="32f8f" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="true" same-size-vertically="true" hgap="-1" vgap="15">
         <margin top="0" left="0" bottom="0" right="0"/>
         <constraints border-constraint="Center"/>
         <properties>
@@ -32,7 +32,7 @@
           <preferredSize width="-1" height="-1"/>
         </properties>
         <border type="empty">
-          <size top="15" left="15" bottom="15" right="15"/>
+          <size top="5" left="5" bottom="5" right="5"/>
         </border>
         <children>
           <grid id="78774" binding="panel1" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">

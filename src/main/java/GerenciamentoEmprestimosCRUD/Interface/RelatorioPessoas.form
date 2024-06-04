@@ -8,7 +8,6 @@
     <properties>
       <background color="-13290187"/>
       <enabled value="true"/>
-      <opaque value="false"/>
     </properties>
     <border type="none"/>
     <children>

@@ -3,12 +3,15 @@ package GerenciamentoEmprestimosCRUD.Interface;
 import GerenciamentoEmprestimosCRUD.DAO.DAOPessoa;
 import GerenciamentoEmprestimosCRUD.Modelo.Pessoa;
 import javax.swing.*;
+import javax.swing.plaf.FontUIResource;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.text.StyleContext;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class GerenciamentoPessoas extends JFrame {
     private JPanel contentPane;
@@ -135,4 +138,5 @@ public class GerenciamentoPessoas extends JFrame {
         }
         tablePessoas.getColumnModel().getColumn(0).setPreferredWidth(1); //define a largura preferencial da primeira coluna para 1 pixel
     }
+
 }

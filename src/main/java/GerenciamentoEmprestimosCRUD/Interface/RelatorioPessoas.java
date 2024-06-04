@@ -3,14 +3,18 @@ package GerenciamentoEmprestimosCRUD.Interface;
 import GerenciamentoEmprestimosCRUD.DAO.DAOEmprestimo;
 import GerenciamentoEmprestimosCRUD.Modelo.Pessoa;
 import javax.swing.*;
+import javax.swing.border.TitledBorder;
+import javax.swing.plaf.FontUIResource;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
+import javax.swing.text.StyleContext;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Locale;
 import java.util.regex.PatternSyntaxException;
 
 public class RelatorioPessoas extends JFrame {
@@ -139,5 +143,6 @@ public class RelatorioPessoas extends JFrame {
 
         totalNaoDevolvido.setText("Total Empréstimos Não Devolvidos: " + totalNaoDevolvidoNumber);
     }
+
 }
 

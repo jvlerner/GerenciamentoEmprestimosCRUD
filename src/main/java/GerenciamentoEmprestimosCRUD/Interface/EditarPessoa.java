@@ -3,11 +3,15 @@ package GerenciamentoEmprestimosCRUD.Interface;
 import GerenciamentoEmprestimosCRUD.DAO.DAOPessoa;
 import GerenciamentoEmprestimosCRUD.Modelo.Pessoa;
 import javax.swing.*;
+import javax.swing.plaf.FontUIResource;
+import javax.swing.text.StyleContext;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.sql.SQLException;
+import java.util.Locale;
 
 public class EditarPessoa extends JFrame {
     private JPanel contentPane;
@@ -90,5 +94,6 @@ public class EditarPessoa extends JFrame {
         txtTelefone.setText(pessoa.getTelefone());
         txtEmail.setText(String.valueOf(pessoa.getEmail()));
     }
+
 }
 

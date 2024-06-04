@@ -3,12 +3,15 @@ package GerenciamentoEmprestimosCRUD.Interface;
 import GerenciamentoEmprestimosCRUD.DAO.DAOFerramenta;
 import GerenciamentoEmprestimosCRUD.Modelo.Ferramenta;
 import javax.swing.*;
+import javax.swing.plaf.FontUIResource;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.text.StyleContext;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Locale;
 
 public class GerenciamentoFerramenta extends JFrame {
     private JPanel contentPane;
@@ -139,4 +142,5 @@ public class GerenciamentoFerramenta extends JFrame {
         }
         tableFerramentas.getColumnModel().getColumn(0).setPreferredWidth(1);
     }
+
 }

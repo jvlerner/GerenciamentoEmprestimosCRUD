@@ -8,17 +8,21 @@ import GerenciamentoEmprestimosCRUD.Modelo.Ferramenta;
 import GerenciamentoEmprestimosCRUD.Modelo.Pessoa;
 import javax.swing.*;
 import javax.swing.border.Border;
+import javax.swing.border.TitledBorder;
+import javax.swing.plaf.FontUIResource;
 import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.text.StyleContext;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.Locale;
 
 //Cria tela principal do aplicativo 
 public class Menu extends JFrame {
-    //Cria coponentes da tela 
+    //Cria coponentes da tela
     private JPanel mainPanel;
     private JPanel panel1;
     private JPanel panel2;
@@ -33,10 +37,11 @@ public class Menu extends JFrame {
     private JLabel labelFerramenta2;
     private JLabel labelPessoa2;
     private JPanel panel0;
-//Cores do menu
+    //Cores do menu
     static Color menuTextWhite = new Color(213, 213, 213);
     static Color menuTextBlack = new Color(35, 35, 35);
-//Inicializa tela menu
+
+    //Inicializa tela menu
     public Menu() throws SQLException {
         //CRIA O FRAME E INICIA SETA OS COMPONENTES
         JFrame frame = new JFrame("Sistema de Gerenciamento de Empréstimos");
@@ -222,191 +227,203 @@ public class Menu extends JFrame {
         });
 
         cadastrarPessoa.addActionListener(
-            new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    JFrame view = new CadastrarPessoa();
-                    view.setVisible(true);
-                    try {
-                        dataPessoas();
-                    } catch (SQLException ex) {
-                        throw new RuntimeException(ex);
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        JFrame view = new CadastrarPessoa();
+                        view.setVisible(true);
+                        try {
+                            dataPessoas();
+                        } catch (SQLException ex) {
+                            throw new RuntimeException(ex);
+                        }
                     }
                 }
-            }
         );
 
         cadastrarFerramenta.addActionListener(
-            new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    JFrame view = new CadastrarFerramenta();
-                    view.setVisible(true);
-                    try {
-                        dataFerramentas();
-                    } catch (SQLException ex) {
-                        throw new RuntimeException(ex);
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        JFrame view = new CadastrarFerramenta();
+                        view.setVisible(true);
+                        try {
+                            dataFerramentas();
+                        } catch (SQLException ex) {
+                            throw new RuntimeException(ex);
+                        }
                     }
                 }
-            }
         );
 
         gerenciarPessoa.addActionListener(
-            new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    try {
-                        JFrame view = new GerenciamentoPessoas();
-                        view.setVisible(true);
-                        dataPessoas();
-                        dataDevPessoas();
-                        dataDevFerramentas(null);
-                    } catch (SQLException ex) {
-                        throw new RuntimeException(ex);
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        try {
+                            JFrame view = new GerenciamentoPessoas();
+                            view.setVisible(true);
+                            dataPessoas();
+                            dataDevPessoas();
+                            dataDevFerramentas(null);
+                        } catch (SQLException ex) {
+                            throw new RuntimeException(ex);
+                        }
                     }
                 }
-            }
         );
 
         gerenciarFerramentas.addActionListener(
-            new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    try {
-                        JFrame view = new GerenciamentoFerramenta();
-                        view.setVisible(true);
-                        dataFerramentas();
-                        dataDevPessoas();
-                        dataDevFerramentas(null);
-                    } catch (SQLException ex) {
-                        throw new RuntimeException(ex);
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        try {
+                            JFrame view = new GerenciamentoFerramenta();
+                            view.setVisible(true);
+                            dataFerramentas();
+                            dataDevPessoas();
+                            dataDevFerramentas(null);
+                        } catch (SQLException ex) {
+                            throw new RuntimeException(ex);
+                        }
                     }
                 }
-            }
         );
 
         gerenciarEmprestimos.addActionListener(
-            new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    try {
-                        JFrame view = new GerenciamentoEmprestimos();
-                        view.setVisible(true);
-                        dataFerramentas();
-                        dataDevPessoas();
-                        dataDevFerramentas(null);
-                    } catch (SQLException ex) {
-                        throw new RuntimeException(ex);
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        try {
+                            JFrame view = new GerenciamentoEmprestimos();
+                            view.setVisible(true);
+                            dataFerramentas();
+                            dataDevPessoas();
+                            dataDevFerramentas(null);
+                        } catch (SQLException ex) {
+                            throw new RuntimeException(ex);
+                        }
                     }
                 }
-            }
         );
 
         relatorioEmprestimos.addActionListener(
-            new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    try {
-                        JFrame view = new RelatorioEmprestimos();
-                        view.setVisible(true);
-                    } catch (SQLException ex) {
-                        throw new RuntimeException(ex);
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        try {
+                            JFrame view = new RelatorioEmprestimos();
+                            view.setVisible(true);
+                        } catch (SQLException ex) {
+                            throw new RuntimeException(ex);
+                        }
                     }
                 }
-            }
         );
 
         relatorioPessoas.addActionListener(
-            new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    try {
-                        JFrame view = new RelatorioPessoas();
-                        view.setVisible(true);
-                    } catch (SQLException ex) {
-                        throw new RuntimeException(ex);
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        try {
+                            JFrame view = new RelatorioPessoas();
+                            view.setVisible(true);
+                        } catch (SQLException ex) {
+                            throw new RuntimeException(ex);
+                        }
                     }
                 }
-            }
         );
 
         sobre.addActionListener(
-            new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    JFrame view = new Sobre();
-                    view.setVisible(true);
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        JFrame view = new Sobre();
+                        view.setVisible(true);
+                    }
                 }
-            }
         );
 
         sair.addActionListener(
-            new ActionListener() {
-                @Override
-                public void actionPerformed(ActionEvent e) {
-                    if (JOptionPane.showConfirmDialog(null, "Tem certeza que deseja sair?", "Sair", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE) == 0) {
-                        System.exit(0);
+                new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        if (JOptionPane.showConfirmDialog(null, "Tem certeza que deseja sair?", "Sair", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE) == 0) {
+                            System.exit(0);
+                        }
                     }
                 }
-            }
         );
     }
 
     @SuppressWarnings("unchecked")
     public void dataPessoas() throws SQLException {
-        comboPessoa1.removeAllItems();
-        ArrayList<Pessoa> listaPessoas = DAOPessoa.index();
+        try {
+            comboPessoa1.removeAllItems();
+            ArrayList<Pessoa> listaPessoas = DAOPessoa.index();
 
-        if (listaPessoas.isEmpty()) {
-            comboPessoa1.addItem("Nenhuma Pessoa Cadastrada");
-        } else {
-            for (Pessoa pessoa : listaPessoas) {
-                comboPessoa1.addItem(pessoa);
+            if (listaPessoas.isEmpty()) {
+                comboPessoa1.addItem("Nenhuma Pessoa Cadastrada");
+            } else {
+                for (Pessoa pessoa : listaPessoas) {
+                    comboPessoa1.addItem(pessoa);
+                }
             }
+        } catch (Exception ignored) {
         }
     }
 
     @SuppressWarnings("unchecked")
     public void dataFerramentas() throws SQLException {
-        comboFerramenta1.removeAllItems();
-        ArrayList<Ferramenta> listaferramentas = DAOFerramenta.indexNaoEmprestado();
+        try {
+            comboFerramenta1.removeAllItems();
+            ArrayList<Ferramenta> listaferramentas = DAOFerramenta.indexNaoEmprestado();
 
-        if (listaferramentas.isEmpty()) {
-            comboFerramenta1.addItem("Nenhuma Ferramenta Disponível");
-        } else {
-            comboFerramenta1.addItem("Selecione uma Ferramenta");
-            for (Ferramenta ferramenta : listaferramentas) {
-                comboFerramenta1.addItem(ferramenta);
+            if (listaferramentas.isEmpty()) {
+                comboFerramenta1.addItem("Nenhuma Ferramenta Disponível");
+            } else {
+                comboFerramenta1.addItem("Selecione uma Ferramenta");
+                for (Ferramenta ferramenta : listaferramentas) {
+                    comboFerramenta1.addItem(ferramenta);
+                }
             }
+        } catch (Exception ignored) {
         }
     }
 
 
     @SuppressWarnings("unchecked")
     public void dataDevPessoas() throws SQLException {
-        comboPessoa2.removeAllItems();
-        ArrayList<Pessoa> listaPessoas = DAOEmprestimo.emprestimoPessoas();
+        try {
+            comboPessoa2.removeAllItems();
+            ArrayList<Pessoa> listaPessoas = DAOEmprestimo.emprestimoPessoas();
 
-        if (listaPessoas.isEmpty()) {
-            comboPessoa2.addItem("Não há ferramentas emprestadas");
-        } else {
-            for (Pessoa pessoa : listaPessoas) {
-                comboPessoa2.addItem(pessoa);
+            if (listaPessoas.isEmpty()) {
+                comboPessoa2.addItem("Não há ferramentas emprestadas");
+            } else {
+                for (Pessoa pessoa : listaPessoas) {
+                    comboPessoa2.addItem(pessoa);
+                }
             }
+        } catch (Exception ignored) {
         }
     }
 
     @SuppressWarnings("unchecked")
     public void dataDevFerramentas(Pessoa pessoa) throws SQLException {
-        comboFerramenta2.removeAllItems();
+        try {
+            comboFerramenta2.removeAllItems();
 
-        if (pessoa != null) {
-            ArrayList<Ferramenta> listaferramentas = DAOEmprestimo.emprestimoFerramenta(pessoa.getId());
-            for (Ferramenta ferramenta : listaferramentas) {
-                comboFerramenta2.addItem(ferramenta);
+            if (pessoa != null) {
+                ArrayList<Ferramenta> listaferramentas = DAOEmprestimo.emprestimoFerramenta(pessoa.getId());
+                for (Ferramenta ferramenta : listaferramentas) {
+                    comboFerramenta2.addItem(ferramenta);
+                }
+            } else {
+                comboFerramenta2.addItem("Selecione uma pessoa acima");
             }
-        } else {
-            comboFerramenta2.addItem("Selecione uma pessoa acima");
+        } catch (Exception ignored) {
         }
     }
 
