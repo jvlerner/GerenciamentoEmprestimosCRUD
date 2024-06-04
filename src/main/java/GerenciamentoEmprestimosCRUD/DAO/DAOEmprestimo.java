@@ -242,7 +242,7 @@ public class DAOEmprestimo {
         Connection con = ConexaoMySQL.getConexaoMySQL();
 
         int id = emprestimo.getId();
-        int idFerramenta = emprestimo.getFerrentaId();
+        int idFerramenta = emprestimo.getFerramentaId();
         int idPessoa = emprestimo.getPessoaId();
         Date dataOut = emprestimo.getDataOut();
         Date dataIn = emprestimo.getDataIn();
