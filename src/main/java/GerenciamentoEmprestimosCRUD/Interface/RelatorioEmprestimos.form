@@ -3,18 +3,67 @@
   <grid id="cbd77" binding="contentPane" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="48" y="54" width="732" height="494"/>
+      <xy x="48" y="54" width="630" height="507"/>
     </constraints>
     <properties>
       <background color="-13290187"/>
-      <opaque value="false"/>
     </properties>
     <border type="none"/>
     <children>
-      <grid id="7f705" layout-manager="GridLayoutManager" row-count="4" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+      <grid id="dffbd" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="10"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="330" height="28"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-13290187"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="1995e" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Segoe UI" size="12"/>
+              <foreground color="-2763307"/>
+              <text value="Filtros:"/>
+            </properties>
+          </component>
+          <component id="7370c" class="javax.swing.JCheckBox" binding="emprestadoCheckBox" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-13290187"/>
+              <font name="Segoe UI" size="12"/>
+              <foreground color="-2763307"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="11"/>
+              <text value="Emprestado"/>
+            </properties>
+          </component>
+          <component id="f91e2" class="javax.swing.JCheckBox" binding="disponívelCheckBox" default-binding="true">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-13290187"/>
+              <font name="Segoe UI" size="12"/>
+              <foreground color="-2763307"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="11"/>
+              <text value="Devolvido"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="7f705" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
         <margin top="10" left="10" bottom="10" right="10"/>
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-13290187"/>
@@ -24,7 +73,7 @@
           <grid id="9c3da" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-13290187"/>
@@ -74,7 +123,7 @@
           </grid>
           <scrollpane id="17a2d">
             <constraints>
-              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-14803426"/>
@@ -108,7 +157,7 @@
           <grid id="3c42e" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
-              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <background color="-14803426"/>
@@ -155,90 +204,40 @@
               </component>
             </children>
           </grid>
-          <grid id="dffbd" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="0" bottom="0" right="10"/>
+        </children>
+      </grid>
+      <grid id="a3e4c" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="10"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13290187"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="8f214" class="javax.swing.JLabel" binding="lblNome">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
-                <preferred-size width="330" height="28"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Segoe UI" size="12"/>
+              <foreground color="-2763307"/>
+              <text value="Pesquisar:"/>
+            </properties>
+          </component>
+          <component id="410d0" class="javax.swing.JTextField" binding="txtProcurarNome">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
             <properties>
-              <background color="-13290187"/>
+              <background color="-14803426"/>
+              <font name="Segoe UI" size="12"/>
+              <foreground color="-2763307"/>
             </properties>
-            <border type="none"/>
-            <children>
-              <component id="1995e" class="javax.swing.JLabel">
-                <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="2" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <font name="Segoe UI" size="12"/>
-                  <foreground color="-2763307"/>
-                  <text value="Filtros:"/>
-                </properties>
-              </component>
-              <component id="7370c" class="javax.swing.JCheckBox" binding="emprestadoCheckBox" default-binding="true">
-                <constraints>
-                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <background color="-13290187"/>
-                  <font name="Segoe UI" size="12"/>
-                  <foreground color="-2763307"/>
-                  <horizontalAlignment value="0"/>
-                  <horizontalTextPosition value="11"/>
-                  <text value="Emprestado"/>
-                </properties>
-              </component>
-              <component id="f91e2" class="javax.swing.JCheckBox" binding="disponívelCheckBox" default-binding="true">
-                <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <background color="-13290187"/>
-                  <font name="Segoe UI" size="12"/>
-                  <foreground color="-2763307"/>
-                  <horizontalAlignment value="0"/>
-                  <horizontalTextPosition value="11"/>
-                  <text value="Devolvido"/>
-                </properties>
-              </component>
-            </children>
-          </grid>
-          <grid id="a3e4c" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
-            <margin top="0" left="0" bottom="0" right="10"/>
-            <constraints>
-              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-            </constraints>
-            <properties>
-              <background color="-13290187"/>
-            </properties>
-            <border type="none"/>
-            <children>
-              <component id="8f214" class="javax.swing.JLabel" binding="lblNome">
-                <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <font name="Segoe UI" size="12"/>
-                  <foreground color="-2763307"/>
-                  <text value="Pesquisar:"/>
-                </properties>
-              </component>
-              <component id="410d0" class="javax.swing.JTextField" binding="txtProcurarNome">
-                <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-                    <preferred-size width="150" height="-1"/>
-                  </grid>
-                </constraints>
-                <properties>
-                  <background color="-14803426"/>
-                  <font name="Segoe UI" size="12"/>
-                  <foreground color="-2763307"/>
-                </properties>
-              </component>
-            </children>
-          </grid>
+          </component>
         </children>
       </grid>
     </children>

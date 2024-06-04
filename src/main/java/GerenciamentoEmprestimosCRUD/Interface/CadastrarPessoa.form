@@ -8,7 +8,6 @@
     <properties>
       <font name="Segoe UI" size="12"/>
       <foreground color="-1"/>
-      <opaque value="false"/>
     </properties>
     <border type="none"/>
     <children>
