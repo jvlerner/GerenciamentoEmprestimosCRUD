@@ -6,6 +6,7 @@ import java.awt.*;
 import java.sql.SQLException;
 
 public class Principal {
+    // metodo principal da aplicação
     public static void main(String[] args) throws SQLException {
         JFrame.setDefaultLookAndFeelDecorated(true);
         UIDefaults uiDefaults = UIManager.getDefaults();
