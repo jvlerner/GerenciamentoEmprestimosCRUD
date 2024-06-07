@@ -24,8 +24,10 @@ public class Principal {
             for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
                 // se o nome do estilo for Nimbus
                 if ("Nimbus".equals(info.getName())) {
+                    // define o estilo de aparencia para o Nimbus
                     UIManager.setLookAndFeel(info.getClassName());
                     break;
+                    // sai do loop depois de encontrar o Nimbus
                 }
             }
         } catch (Exception e) {
