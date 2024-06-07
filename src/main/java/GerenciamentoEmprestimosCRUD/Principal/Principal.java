@@ -20,7 +20,9 @@ public class Principal {
         uiDefaults.put("control", new Color(213, 213, 213));
 
         try {
+            //  navega pelos estilos de aparência que estão gravados
             for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+                // se o nome do estilo for Nimbus
                 if ("Nimbus".equals(info.getName())) {
                     UIManager.setLookAndFeel(info.getClassName());
                     break;
