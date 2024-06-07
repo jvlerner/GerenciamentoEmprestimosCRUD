@@ -10,9 +10,13 @@ public class Principal {
     public static void main(String[] args) throws SQLException {
         // decora a aparência padrão das janelas JFrame
         JFrame.setDefaultLookAndFeelDecorated(true);
+        // da a padronização da interface no UIManager
         UIDefaults uiDefaults = UIManager.getDefaults();
+        // define a cor base do nimbus
         uiDefaults.put("nimbusBase", new Color(255, 255, 255));
+        // define a cor nimbus blue grey
         uiDefaults.put("nimbusBlueGrey", new Color(36, 38, 44));
+        // define a cor do controle
         uiDefaults.put("control", new Color(213, 213, 213));
 
         try {
