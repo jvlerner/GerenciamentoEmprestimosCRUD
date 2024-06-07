@@ -33,6 +33,7 @@ public class Principal {
         } catch (Exception e) {
             // If Nimbus is not available, you can set the GUI to another look and feel.
         }
+        //  Cria um novo menu, iniciando a interface do usuário
         new Menu();
     }
 }
