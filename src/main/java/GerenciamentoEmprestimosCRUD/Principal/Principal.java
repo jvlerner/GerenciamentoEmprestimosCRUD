@@ -8,6 +8,7 @@ import java.sql.SQLException;
 public class Principal {
     // metodo principal da aplicação
     public static void main(String[] args) throws SQLException {
+        // decora a aparência padrão das janelas JFrame
         JFrame.setDefaultLookAndFeelDecorated(true);
         UIDefaults uiDefaults = UIManager.getDefaults();
         uiDefaults.put("nimbusBase", new Color(255, 255, 255));
